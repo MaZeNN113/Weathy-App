@@ -1,46 +1,9 @@
 import dayjs from 'https://cdn.jsdelivr.net/npm/dayjs@1.11.18/+esm';
 const today = dayjs();
 
-// updateDates();
-
 const searchInput = document.getElementById('search-box');
 
 searchInput.addEventListener('keydown', (event) => {
-  /* const cityName = searchInput.value.trim();
-  const city = document.querySelector('.city');
-  const rainChance = document.querySelector('.rain-chance');
-  const cityTemp = document.querySelector('.city-temp');
-  const realFeel = document.querySelector('.real-feel-content');
-  const windSpeed = document.querySelector('.wind-content');
-  const rainChanceBottom = document.querySelector('.chance-of-rain-content');
-  const uvIndex = document.querySelector('.uv-index-content');
-  const morning = document.querySelector('.am6-temp');
-  const halfMorning = document.querySelector('.am9-temp');
-  const afternoon = document.querySelector('.pm12-temp');
-  const halfAfternoon = document.querySelector('.pm3-temp');
-  const evening = document.querySelector('.pm6-temp');
-  const night = document.querySelector('.pm9-temp');
-  const dayOneDescription = document.querySelector('.day-one-description');
-  const dayOneDegrees = document.querySelector('.day-one-degrees');
-  const dayOneIcon = document.querySelector('.day-one-weather-icon');
-  const dayTwoDescription = document.querySelector('.day-two-description');
-  const dayTwoDegrees = document.querySelector('.day-two-degrees');
-  const dayTwoIcon = document.querySelector('.day-one-weather-icon');
-  const dayThreeDescription = document.querySelector('.day-three-description');
-  const dayThreeDegrees = document.querySelector('.day-three-degrees');
-  const dayThreeIcon = document.querySelector('.day-three-weather-icon');
-  const dayFourDescription = document.querySelector('.day-four-description');
-  const dayFourDegrees = document.querySelector('.day-four-degrees');
-  const dayFourIcon = document.querySelector('.day-four-weather-icon');
-  const dayFiveDescription = document.querySelector('.day-five-description');
-  const dayFiveDegrees = document.querySelector('.day-five-degrees');
-  const dayFiveIcon = document.querySelector('.day-five-weather-icon');
-  const daySixDescription = document.querySelector('.day-six-description');
-  const daySixDegrees = document.querySelector('.day-six-degrees');
-  const daySixIcon = document.querySelector('.day-six-weather-icon');
-  const daySevenDescription = document.querySelector('.day-seven-description');
-  const daySevenDegrees = document.querySelector('.day-seven-degrees');
-  const daySevenIcon = document.querySelector('.day-seven-weather-icon'); */
   const cityName = searchInput.value.trim();
 
   if (event.key === 'Enter') {
@@ -282,43 +245,6 @@ searchInput.addEventListener('keydown', (event) => {
           `;
 
           document.querySelector('main').innerHTML = html;
-
-          /* city.textContent = data.location.name;
-          rainChance.textContent = `Chance of rain: ${data.current.chance_of_rain}%`;
-          cityTemp.textContent = `${data.current.temp_c}°`;
-          realFeel.textContent = `${data.current.feelslike_c}°`;
-          windSpeed.textContent = `${data.current.wind_kph}km/h`;
-          rainChanceBottom.textContent = `${data.current.chance_of_rain}%`;
-          uvIndex.textContent = data.current.uv;
-          morning.textContent = `${data.forecast.forecastday[0].hour[6].temp_c}°`;
-          halfMorning.textContent = `${data.forecast.forecastday[0].hour[9].temp_c}°`;
-          afternoon.textContent = `${data.forecast.forecastday[0].hour[12].temp_c}°`;
-          halfAfternoon.textContent = `${data.forecast.forecastday[0].hour[15].temp_c}°`;
-          evening.textContent = `${data.forecast.forecastday[0].hour[18].temp_c}°`;
-          night.textContent = `${data.forecast.forecastday[0].hour[21].temp_c}°`;
-
-          dayOneDescription.textContent =
-            data.forecast.forecastday[0].day.condition.text;
-          dayTwoDescription.textContent =
-            data.forecast.forecastday[1].day.condition.text;
-          dayThreeDescription.textContent =
-            data.forecast.forecastday[2].day.condition.text;
-          dayFourDescription.textContent =
-            data.forecast.forecastday[3].day.condition.text;
-          dayFiveDescription.textContent =
-            data.forecast.forecastday[4].day.condition.text;
-          daySixDescription.textContent =
-            data.forecast.forecastday[5].day.condition.text;
-          daySevenDescription.textContent =
-            data.forecast.forecastday[6].day.condition.text;
-
-          dayOneDegrees.textContent = `${Math.round(data.forecast.forecastday[0].day.maxtemp_c)}/${Math.round(data.forecast.forecastday[0].day.mintemp_c)}°`;
-          dayTwoDegrees.textContent = `${Math.round(data.forecast.forecastday[1].day.maxtemp_c)}/${Math.round(data.forecast.forecastday[1].day.mintemp_c)}`;
-          dayThreeDegrees.textContent = `${Math.round(data.forecast.forecastday[2].day.maxtemp_c)}/${Math.round(data.forecast.forecastday[2].day.mintemp_c)}`;
-          dayFourDegrees.textContent = `${Math.round(data.forecast.forecastday[3].day.maxtemp_c)}/${Math.round(data.forecast.forecastday[3].day.mintemp_c)}`;
-          dayFiveDegrees.textContent = `${Math.round(data.forecast.forecastday[4].day.maxtemp_c)}/${Math.round(data.forecast.forecastday[4].day.mintemp_c)}`;
-          daySixDegrees.textContent = `${Math.round(data.forecast.forecastday[5].day.maxtemp_c)}/${Math.round(data.forecast.forecastday[5].day.mintemp_c)}`;
-          daySevenDegrees.textContent = `${Math.round(data.forecast.forecastday[6].day.maxtemp_c)}/${Math.round(data.forecast.forecastday[6].day.mintemp_c)}`; */
         })
         .catch((error) => console.error(error));
     } else {
@@ -343,10 +269,8 @@ function getWeatherImage(code) {
     return 'clear';
   } else if (code === 1003) {
     return 'partly_cloudy';
-  } else if (code === 1006) {
+  } else if (code === 1006 || code === 1009) {
     return 'cloudy';
-  } else if (code === 1009) {
-    return 'overcast';
   } else if (code === 1012) {
     return 'haze';
   } else if (
