@@ -1,69 +1,23 @@
-.week-forecast {
-   display:flex;
-   flex-direction: column;
-   background-color: #1b2638;
-   margin: 15px;
-   border-radius: 15px;
-   padding: 30px;
-   overflow: scroll;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-.week-forecast-card {
-   display:grid;
-   grid-template-columns: 35% 1fr 10%;
-   align-items: center;
-   vertical-align: center;
-   margin-bottom: 10px;
+html {
+   font-size: 16px;
 }
 
-.week-forecast-title {
-   font-size: 1.2rem;
-   font-weight: 600;
-   margin-bottom: 25px;
+body {
+   font-family: "Tomorrow", Arial, Helvetica, sans-serif;
+   font-size: 1rem;
+   background-color: #101827;
+   color: #f1f5f9;
+   /* 802C62 */
+   padding-top: 60px;
 }
 
-.icon-description-container {
+/* main {
    display: flex;
-   align-items: center;
-   flex:1;
-}
-
-.week-day-title {
-   font-size: 1.5rem;
-   font-weight: 500;
-   color: #94a3b8;
-}
-
-.temp-description {
-   font-size: 1.5rem;
-   font-weight: 600;
-}
-
-.degrees {
-   font-size: 1.5rem;
-   margin-left: 50px;
-   color: #94a3b8;
-}
-
-@media (max-width: 768px) {
-   .week-forecast-card {
-      display: grid;
-      grid-template-columns: 20% 1fr 30%;
-   }
-
-   .week-forecast-card .weather-image-forecast {
-      width: 80px;
-   }
-
-   .week-day-title {
-      font-size: 1rem;
-   }
-
-   .temp-description {
-      font-size: 1.2rem;
-   }
-
-   .degrees {
-      font-size: smaller;
-   }
-}
+   flex-direction: row;
+} */
