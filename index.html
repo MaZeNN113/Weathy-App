@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheathy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/89ff678d25.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/weather-details/main-weather.css" />
+    <link rel="stylesheet" href="styles/weather-details/day-forecast.css" />
+    <link rel="stylesheet" href="styles/weather-details/weather-info.css" />
+    <link rel="stylesheet" href="styles/weather-details/week-forecast.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+        <a href="index.html">
+          <div class="logo-container">
+            <i class="fa-solid fa-sun weathy-icon"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="middle-section">
+        <div class="search-box-container">
+          <input type="text" id="search-box" placeholder="Enter city" />
+        </div>
+      </div>
+
+      <div class="right-section">
+        <button class="dark-mode-button">
+          <i class="fa-solid fa-moon dark-mode-icon"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+    </main>
+
+    <script type="module" src="scripts/getWeather.js"></script>
+  </body>
+</html>
