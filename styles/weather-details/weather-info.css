@@ -1,0 +1,170 @@
+.more-details {
+   background-color: #1b2638;
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: flex-start;
+   margin: 15px;
+   border-radius: 15px;
+   padding: 30px;
+}
+
+/* ========================= */
+
+.air-conditions-title {
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+
+.first-row-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+
+.temp-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: first baseline;
+}
+
+.temp-info .temp-icon {
+   font-size: larger;
+   margin-right: 5px;
+   color: #94a3b8;
+}
+
+.real-feel-info .real-feel-title {
+   font-size: 1.2rem;
+   font-weight: 400;
+   margin-bottom: 5px;
+   color: #94a3b8;
+}
+
+.real-feel-info .real-feel-content {
+   font-size: 2rem;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+/* ---------------------- */
+
+.wind-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: first baseline;
+   margin-right: 50px;
+}
+
+.wind-info .wind-icon {
+   font-size: larger;
+   margin-right: 10px;
+   color: #38bdf8;
+}
+
+.wind-info-container .wind-title {
+   font-size: 1.2rem;
+   font-weight: 400;
+   margin-bottom: 5px;
+   color: #94a3b8;
+}
+
+.wind-info-container .wind-content {
+   font-size: 2rem;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+/* ============================ */
+
+.second-row-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 30px;
+}
+
+.chance-of-rain-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: first baseline;
+}
+
+.chance-of-rain-info .chance-of-rain-icon {
+   font-size: larger;
+   margin-right: 10px;
+   color: #38bdf8;
+}
+
+.chance-of-rain-container .chance-of-rain-title {
+   font-size: 1.2rem;
+   font-weight: 400;
+   margin-bottom: 5px;
+   color: #94a3b8;
+}
+
+.chance-of-rain-container .chance-of-rain-content {
+   font-size: 2rem;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+/* ---------------------- */
+
+.uv-index-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: first baseline;
+   margin-right: 100px;
+}
+
+.uv-index-info .uv-index-icon {
+   font-size: larger;
+   margin-right: 10px;
+   color: #fbbf24;
+}
+
+.uv-index-info-container .uv-index-title {
+   font-size: 1.2rem;
+   font-weight: 400;
+   margin-bottom: 5px;
+   color: #94a3b8;
+}
+
+.uv-index-info-container .uv-index-content {
+   font-size: 2rem;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+   .first-row-container {
+      justify-content: space-between;
+      column-gap: 15px;
+   }
+
+   .temp-info {
+      justify-content: space-between;
+      margin-right: 20px;
+   }
+
+   .wind-info {
+      margin-right: 5px;
+   }
+
+   .second-row-container {
+      justify-content: space-between;
+      column-gap: 15px;
+   }
+
+   .chance-of-rain-info{
+      justify-content: space-between;
+      margin-right: 20px;
+   }
+
+   .ui-index-info {
+      margin-right: 5px;
+   }
+}
