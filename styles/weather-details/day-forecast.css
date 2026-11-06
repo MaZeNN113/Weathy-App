@@ -1,0 +1,61 @@
+.day-forecast {
+   display: flex;
+   flex-direction: column;
+   background-color: #1b2638;
+   margin: 15px;
+   border-radius: 15px;
+   padding: 30px;
+   overflow:scroll;
+}
+
+.day-forecast .days-forecast-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 30px;
+}
+
+.day-forecast .title {
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+.forecast-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.forecast-card .hour {
+   font-weight: bold;
+   color: #94a3b8;
+}
+
+.weather-image-forecast {
+   width: 100px;
+   margin: 20px;
+   padding: 10px;
+}
+
+.forecast-card .temp {
+   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+   .day-forecast .days-forecast-container {
+      flex-direction: column;
+   }
+
+   .forecast-card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .forecast-card .hour, .forecast-card
+   .weather-image-forecast {
+      flex: 1;
+   }
+}
