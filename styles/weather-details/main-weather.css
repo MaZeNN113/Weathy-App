@@ -1,0 +1,47 @@
+.main-weather {
+   display: flex;
+   margin: 10px 10px 10px 20px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.weather-image {
+   width: 150px;
+   margin-right: 20px;
+   padding: 15px;
+}
+
+.weather-text {
+   margin-left: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.weather-text .city {
+   font-size: 2rem;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+.weather-text .rain-chance {
+   font-size: 0.8rem;
+   font-weight: 400;
+   margin-bottom: 15px;
+}
+
+.weather-text .city-temp {
+   font-size: 2.5rem;
+   font-weight: 700;
+}
+
+.error-message-display {
+   display: inline-flex;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: center;
+   text-align: center;
+   font-size: 2rem;
+   padding: 100px;
+   background-color: red;
+   border-radius: 20px;
+}
