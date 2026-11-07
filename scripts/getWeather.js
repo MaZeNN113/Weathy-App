@@ -97,7 +97,7 @@ searchInput.addEventListener('keydown', (event) => {
                 <div class="real-feel-info">
                   <div class="real-feel-title">Real Feel</div>
 
-                  <div class="real-feel-content">${data.current.feelslike_c}°</div>
+                  <div class="real-feel-content">${Math.round(data.current.feelslike_c)}°</div>
                 </div>
               </div>
             </div>
