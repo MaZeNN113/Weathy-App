@@ -10,7 +10,7 @@ searchInput.addEventListener('keydown', (event) => {
     if (cityName) {
       console.log(cityName);
       fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=249085e15af34328ad0161221260511&q=${cityName}&days=7&aqi=no&alerts=yes`
+        `https://api.weatherapi.com/v1/forecast.json?key=249085e15af34328ad0161221260511&q=${cityName}&days=7&aqi=no&alerts=yes`,
       )
         .then((response) => response.json())
         .then((data) => {
@@ -246,7 +246,10 @@ searchInput.addEventListener('keydown', (event) => {
 
           document.querySelector('main').innerHTML = html;
         })
-        .catch((error) => console.error(error));
+        .catch((error) => {
+          console.error(error);
+          document.querySelector('main').innerHTML = error;
+        });
     } else {
       const existingMessage = document.querySelector('.error-message-display');
       if (existingMessage) {
